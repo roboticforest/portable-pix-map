@@ -1,0 +1,15 @@
+# CLion specific project files
+.idea/*
+
+# Build Directories
+*build*/*
+
+# External Libraries
+lib/*
+
+# Generated Documentation Files
+doc/*
+
+# Generated Files
+inc/game-engine_version.h
+ProjectVersion
