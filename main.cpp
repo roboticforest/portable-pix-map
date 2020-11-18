@@ -8,16 +8,14 @@
  */
 
 #include <iostream>
-#include <fstream>
 
 #include "image.h"
 
 int main() {
     std::cout << "Hello Portable Pixmap World!" << std::endl;
 
-    std::ifstream vidFrame("frame1.ppm");
-
     DV::Image testImg;
-    testImg.load(vidFrame);
+    testImg.load("frame1.ppm");
+    testImg.save("output.ppm");
 
 }

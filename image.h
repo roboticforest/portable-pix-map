@@ -18,10 +18,12 @@ namespace DV {
         Image();
         ~Image();
 
-        bool load(std::ifstream & file);
+        bool load(const char* filename);
+        bool save(std::string& filename);
+        bool save(const char* filename);
 
       private:
-        unsigned int* _pixels;
+        signed char* _pixels;
         unsigned int _width;
         unsigned int _height;
     };
