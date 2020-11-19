@@ -19,10 +19,9 @@ namespace DV {
         ~Image();
 
         bool load(const char* filename);
-        bool save(std::string& filename);
         bool save(const char* filename);
 
-      private:
+      // private:  // TODO: Make these members private again!
         signed char* _pixels;
         unsigned int _width;
         unsigned int _height;

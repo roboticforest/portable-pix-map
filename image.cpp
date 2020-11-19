@@ -66,10 +66,6 @@ namespace DV {
         return false;
     }
 
-    bool Image::save(std::string& filename) {
-        return this->save(filename.c_str());
-    }
-
     bool Image::save(const char* filename) {
         std::ofstream file;
         file.open(filename, std::ofstream::binary);
